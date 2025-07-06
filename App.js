@@ -1,6 +1,6 @@
-import { StatusBar } from 'expo-status-bar';
+// import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {  ImageBackground, StyleSheet, Text, View, StatusBar } from 'react-native';
 
 // export default function App() {
 //   return (
@@ -15,26 +15,61 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.mainText}>Open up App.js to start working on your App!
-        </Text>
-        <Text style={[styles.mediumText, styles.textStyle]}>Tesla, Inc</Text>
-        <StatusBar style="auto" />
+        <StatusBar barStyle="light-content" />
+        <ImageBackground 
+          source={require('./assets/background.png')}
+          style={styles.imageContainer}
+          imageStyle={styles.image}
+        >
+          <View style={styles.detailsContainer}>
+            <Text style={[styles.mediumText, styles.textStyle]}>Tesla, Inc</Text>
+            <Text style={[styles.largeText, styles.textStyle]}>754.86</Text>
+            <View style={styles.rectangleShapeContainer}>
+              <Text style={[styles.smallText, styles.textStyle]}>+0.98</Text>
+            </View>
+          </View>
+        </ImageBackground>
       </View>
     );
   }
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
+    backgroundColor: 'black',
+  },
+  textStyle: {
+    fontFamily: 'AvenirNext-Regular',
+    textAlign: 'center',
+    color: 'white',
+  },
+  largeText: {
+    fontSize: 45,
+  },
+  mediumText: {
+    fontSize: 35,
+  },
+  smallText: {
+    fontSize: 25,
+  },
+  rectangleShapeContainer: {
+    marginTop: 5,
+    marginHorizontal: 160,
+    borderRadius: 20,
     justifyContent: 'center',
+    backgroundColor: 'green',
   },
-  mainText: {
-    color: 'blue',
-    // backgroundColor: 'blue',
-    fontSize: 30,
-    marginBottom: 10,
+  imageContainer: {
+    flex: 1,
   },
+  image: {
+    flex: 1,
+    width: null,
+    height: null,
+    resizeMode: 'cover',
+  },
+  detailsContainer: {
+    flex: 1,
+    justifyContent: 'center',
+  }
 });
