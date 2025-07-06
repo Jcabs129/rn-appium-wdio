@@ -1,11 +1,11 @@
 
 const fetchStockPrice = async(stockTickerSymbol) => {
-  const endpoint = "<https://financialmodelingprep.com/api/v3/quote>";
+  const endpoint = "https://financialmodelingprep.com/api/v3/quote";
   const apiKey = "vKl4LsebbuGrdIhYx5sBFq5JUzTZqzNB"
   const response = await fetch(`${endpoint}/${stockTickerSymbol.toUpperCase()}?apikey=${apiKey}`)
   const result = await response.json()
   const { name, price, change } = result[0];
-  const chnageType = change > 0 ? "+" : "-";
+  const changeType = change > 0 ? "+" : "-";
 
   return {
     stockName: name,
