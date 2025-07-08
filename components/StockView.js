@@ -3,11 +3,23 @@ import { View, Text, StyleSheet } from 'react-native';
 import SearchBar from './SearchBar';
 export default function StockView(props) {
 	return (
-		<View>
-			<Text style={[styles.mediumText, styles.textStyle]}>{props.stockName}</Text>
-			<Text style={[styles.largeText, styles.textStyle]}>{props.stockPrice}</Text>
+    <View>
+			<Text 
+        {...addTestIdentifiers('stockNameText')}
+        style={[styles.mediumText, styles.textStyle]}>
+          {props.stockName}
+      </Text>
+			<Text
+        {...addTestIdentifiers('stockPriceText')} 
+        style={[styles.largeText, styles.textStyle]}>
+          {props.stockPrice}
+      </Text>
 			<View style={[styles.rectangleShapeContainer, props.changeType === "+" ? styles.positiveChange : styles.negativeChange]}>
-				<Text style={[styles.smallText, styles.textStyle]}>{props.changeValue}</Text>
+				<Text
+          {...addTestIdentifiers('stockChangeValueText')}  
+          style={[styles.smallText, styles.textStyle]}>
+            {props.changeValue}
+        </Text>
 			</View>
 			<SearchBar 
 				placeholderTextInputLabelText="Search (e.g. AAPL)" 

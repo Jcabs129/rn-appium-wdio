@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "react-native-stock-price-app",
+    "name": "RN APPIUM WDIO",
     "slug": "react-native-stock-price-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -17,16 +17,29 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jcabs.stockprice",
+      "buildNumber": "1.0.0",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "backgroundColor": "#FFFFFF",
+        "package": "com.jcabs.stockprice",
+        "versionCode": 1
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "76b0abc7-e992-44ea-a408-5da50f809a1c"
+      }
+    },
+    "owner": "jcabs"
   }
 }

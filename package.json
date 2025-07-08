@@ -18,7 +18,8 @@
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
     "react-native-web": "~0.13.12",
-    "webdriverio": "^9.16.2"
+    "webdriverio": "^9.16.2",
+    "expo-dev-client": "~0.7.2"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0"
