@@ -2,6 +2,9 @@
   "name": "react-native-stock-price-app",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -11,18 +14,21 @@
   },
   "dependencies": {
     "@babel/preset-env": "^7.28.0",
-    "expo": "~42.0.1",
-    "expo-status-bar": "~1.0.4",
+    "expo": "^53.0.19",
+    "expo-dev-client": "~5.2.4",
+    "expo-status-bar": "~2.2.3",
     "mocha": "^11.7.1",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
-    "react-native-web": "~0.13.12",
-    "webdriverio": "^9.16.2",
-    "expo-dev-client": "~0.7.2"
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-native": "0.79.5",
+    "react-native-web": "^0.20.0",
+    "webdriverio": "^9.16.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0"
+    "@babel/core": "^7.26.0"
   },
-  "private": true
+  "private": true,
+  "env": {
+    "NODE_VERSION": "18"
+  }
 }

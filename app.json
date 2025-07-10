@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "RN APPIUM WDIO",
+    "name": "react-native-stock-price-app",
     "slug": "react-native-stock-price-app",
     "version": "1.0.0",
     "orientation": "portrait",
