@@ -11,7 +11,6 @@ By combining React Native (for building apps) with WebdriverIO (for testing), to
 - [Features](#features)
 - [Requirements](#requirements)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Commands](#commands)
 - [Material](#material)
 
@@ -31,10 +30,14 @@ By combining React Native (for building apps) with WebdriverIO (for testing), to
 Xcode and Android Studio
 Having both installed allows us to test on the iOS Simulator and Android Emulator.
 
+Expo signup/ in
+In order to downlaod builds to run on simulator you will need to sign up to expo and follow instrucrtions 
+
 - [Node.js](https://nodejs.org/) >= 18
 - [npm](https://www.npmjs.com/) >= 9
 - [Expo CLI](https://docs.expo.dev/get-started/installation/) (for React Native apps)
 - [EAS CLI/ login](https://docs.expo.dev/tutorial/eas/configure-development-build/#install-eas-cli)
+Expo CLI is a command line tool that helps scaffold React Native projects and provides the easiest way to get started. It also has a companion Expo client app that you can install on iOS and Android devices that allows you to preview your apps wirelessly. We can install it via yarn:
 - [Appium](https://docs.expo.dev/develop/development-builds/create-a-build/)
 - [webdriverio](https://webdriver.io/)
 - [watchman](https://facebook.github.io/watchman/docs/install)
@@ -50,17 +53,27 @@ npm install
 Or if using Expo:
 
 bash
-brew install watchman
-npm install -g expo-cli
-npm install -g appium
-npm install webdriverio --dev
-expo install
-📈 Usage
+```brew install watchman```
 
+### Expo cli
+Expo CLI is a command line tool that helps scaffold React Native projects and provides the easiest way to get started. It also has a companion Expo client app that you can install on iOS and Android devices that allows you to preview your apps wirelessly. 
+```npm install -g expo-cli```
 
-bash
-npm start
-Or with Expo:
+### Appium Server
+WebdriverIO acts as our Appium client, but we need to also run Appium Server, which will act as a bridge to translate the actions in our tests to the necessary logic in either UIAutomator2 or XCUITest behind the scenes. You can install it globally from npm:
+```npm install -g appium```
+
+### webdriver
+a popular JavaScript Appium client that provides its own API for issuing Appium commands. You can install as a development dependency from npm:
+```npm install webdriverio --dev```
+
+## 🛳️ Commands
+
+```npx expo start --ios```
+
+```eas build:dev```
+
+```appium server --use-plugins=inspector --allow-cors```
 
 bash
 expo start
