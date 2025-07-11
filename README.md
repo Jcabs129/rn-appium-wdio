@@ -27,17 +27,16 @@ By combining React Native (for building apps) with WebdriverIO (for testing), to
 ---
 
 ## 📦 Requirements
-Xcode and Android Studio
+### Xcode and Android Studio
 Having both installed allows us to test on the iOS Simulator and Android Emulator.
 
-Expo signup/ in
-In order to downlaod builds to run on simulator you will need to sign up to expo and follow instrucrtions 
+### Expo sign up/ in
+In order to downlaod builds to run on simulator you will need to sign up to expo and follow instrucrtions mention below expo/ eas
 
 - [Node.js](https://nodejs.org/) >= 18
 - [npm](https://www.npmjs.com/) >= 9
 - [Expo CLI](https://docs.expo.dev/get-started/installation/) (for React Native apps)
-- [EAS CLI/ login](https://docs.expo.dev/tutorial/eas/configure-development-build/#install-eas-cli)
-Expo CLI is a command line tool that helps scaffold React Native projects and provides the easiest way to get started. It also has a companion Expo client app that you can install on iOS and Android devices that allows you to preview your apps wirelessly. We can install it via yarn:
+- [EAS CLI/ login](https://docs.expo.dev/tutorial/eas/configure-development-build/#install-eas-cli) - Expo CLI is a command line tool that helps scaffold React Native projects and provides the easiest way to get started. It also has a companion Expo client app that you can install on iOS and Android devices that allows you to preview your apps wirelessly. We can install it via yarn:
 - [Appium](https://docs.expo.dev/develop/development-builds/create-a-build/)
 - [webdriverio](https://webdriver.io/)
 - [watchman](https://facebook.github.io/watchman/docs/install)
