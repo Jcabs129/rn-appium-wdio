@@ -61,10 +61,12 @@ Used to build development versions of the app in the cloud.
 Install with:
 
 bash
+
 ```npm install -g eas-cli```
 Log in to your Expo account:
 
 bash
+
 ```eas login```
 
 
@@ -94,6 +96,7 @@ bash
 Clone the project and install dependencies:
 
 bash
+
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 npm install
@@ -101,27 +104,33 @@ npm install
 Install watchman (macOS):
 
 bash
+
 ```brew install watchman```
 
 Install global CLIs if you haven’t already:
 
 bash
+
 ```npm install -g expo-cli eas-cli appium```
 
 ### 🧪 Usage
 Make sure to build the development version of your app first using EAS:
 
 bash
+
 ```eas build:dev```
 Run your app on an iOS simulator:
 
 bash
+
 ```npx expo start --ios```
 Or launch Expo dev server for all platforms:
 
 bash
+
 ```npx expo start```
 Start the Appium server with inspector and CORS enabled:
 
 bash
+
 ```appium server --use-plugins=inspector --allow-cors```
