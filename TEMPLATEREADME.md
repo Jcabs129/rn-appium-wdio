@@ -42,11 +42,7 @@ To test on both iOS Simulator and Android Emulator, make sure you have:
 - [Node.js](https://nodejs.org/) `>= 18`
 - [npm](https://www.npmjs.com/) `>= 9`
 - [watchman](https://facebook.github.io/watchman/docs/install) — improves file watching on macOS
-- [Expo CLI](https://docs.expo.dev/get-started/installation/) — for managing React Native apps  
-  Install with:  
-  ```bash
-  npm install -g expo-cli
-
+- [Expo CLI](https://docs.expo.dev/get-started/installation/) — for managing React Native apps
 
 ### 📦 Expo CLI
 
@@ -155,7 +151,8 @@ Start the Appium server with inspector and CORS enabled:
 
 ```bash
 appium server --use-plugins=inspector --allow-cors`
-``
+```
+
 
 ## 🛠️ Material
 - [Building and testing native mobile apps](https://medium.com/tauk-blog/building-and-testing-native-mobile-apps-with-react-native-and-webdriverio-part-1-d51e73fbf573)
