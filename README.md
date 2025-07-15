@@ -55,15 +55,15 @@ bash
 ```brew install watchman```
 
 ### Expo cli
-Expo CLI is a command line tool that helps scaffold React Native projects and provides the easiest way to get started. It also has a companion Expo client app that you can install on iOS and Android devices that allows you to preview your apps wirelessly. 
+Expo CLI is a command line tool that helps scaffold React Native projects and provides the easiest way to get started. It also has a companion Expo client app that you can install on iOS and Android devices that allows you to preview your apps wirelessly.  
 ```npm install -g expo-cli```
 
 ### Appium Server
-WebdriverIO acts as our Appium client, but we need to also run Appium Server, which will act as a bridge to translate the actions in our tests to the necessary logic in either UIAutomator2 or XCUITest behind the scenes. You can install it globally from npm:
+WebdriverIO acts as our Appium client, but we need to also run Appium Server, which will act as a bridge to translate the actions in our tests to the necessary logic in either UIAutomator2 or XCUITest behind the scenes. You can install it globally from npm:  
 ```npm install -g appium```
 
 ### webdriver
-a popular JavaScript Appium client that provides its own API for issuing Appium commands. You can install as a development dependency from npm:
+a popular JavaScript Appium client that provides its own API for issuing Appium commands. You can install as a development dependency from npm:  
 ```npm install webdriverio --dev```
 
 ## 🛳️ Commands

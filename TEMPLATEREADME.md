@@ -78,7 +78,7 @@ bash
 
 ```npm install -g appium```
 
-###🧪 WebdriverIO
+### 🧪 WebdriverIO
 WebdriverIO is a JavaScript testing framework for browser and mobile automation.
 Install it as a development dependency:
 
@@ -98,7 +98,9 @@ Clone the project and install dependencies:
 bash
 
 git clone https://github.com/your-username/your-repo-name.git
+
 cd your-repo-name
+
 npm install
 
 Install watchman (macOS):
@@ -112,6 +114,12 @@ Install global CLIs if you haven’t already:
 bash
 
 ```npm install -g expo-cli eas-cli appium```
+
+**Expo CLI** is a command line tool that helps scaffold React Native projects and provides the easiest way to get started. It also has a companion Expo client app that you can install on iOS and Android devices that allows you to preview your apps wirelessly.
+
+**EAS CLI** is a tool provided by Expo to help you build, submit, and manage React Native apps in the cloud. It enables you to create production-ready or development builds for iOS and Android without needing a local native development environment. (Optional)
+
+**Appium** is an open-source automation tool for testing mobile applications. It allows you to write tests for native, hybrid, and mobile web apps on iOS, Android, and Windows platforms using the same API.
 
 ### 🧪 Usage
 Make sure to build the development version of your app first using EAS:
@@ -129,8 +137,15 @@ Or launch Expo dev server for all platforms:
 bash
 
 ```npx expo start```
-Start the Appium server with inspector and CORS enabled:
+
 
 bash
+Start the Appium server with inspector and CORS enabled:
 
 ```appium server --use-plugins=inspector --allow-cors```
+
+## 🛠️ Material
+- [Building and testing native mobile apps](https://medium.com/tauk-blog/building-and-testing-native-mobile-apps-with-react-native-and-webdriverio-part-1-d51e73fbf573)
+- [Configure a development build in cloud](hhttps://docs.expo.dev/tutorial/eas/configure-development-build/)
+- [Create and run a cloud build for iOS Simulator](https://docs.expo.dev/tutorial/eas/ios-development-build-for-simulators/)
+- [How to create and run a cloud build for iOS Simulator | EAS Tutorial](https://www.youtube.com/watch?v=SgL97PFZctg&ab_channel=Expo)
