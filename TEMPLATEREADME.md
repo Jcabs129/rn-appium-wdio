@@ -55,9 +55,9 @@ To test on both iOS Simulator and Android Emulator, make sure you have:
 Used for running and building React Native apps via Expo.
 Install with:
 
-bash
-
-```npm install -g expo-cli```
+```bash
+npm install -g expo-cli
+```
 
 ### ⚙️ EAS CLI
 
@@ -65,9 +65,9 @@ bash
 
 Install with:
 
-bash
-
-```npm install -g eas-cli```
+```bash
+npm install -g eas-cli
+```
 
 ### ⚙️ EAS login
 
@@ -75,18 +75,18 @@ eas login connects your local machine to your Expo account, enabling you to use 
 
 Log in to your Expo account:
 
-bash
-
-```eas login```
+```bash
+eas login
+```
 
 
 ### 🤖 Appium (Server)
 Appium Server acts as a bridge between your WebdriverIO test scripts and the native test frameworks like XCUITest (iOS) and UIAutomator2 (Android).
 Install globally with:
 
-bash
-
-```npm install -g appium```
+```bash
+npm install -g appium
+```
 
 ### 🧪 WebdriverIO
 WebdriverIO is a JavaScript testing framework for browser and mobile automation.
@@ -95,21 +95,20 @@ Install it as a development dependency:
 
 open-source automation test framework for web and mobile applications. It provides a simple and flexible API for writing end-to-end tests using the WebDriver protocol and supports modern automation tools and services.
 
-bash
-
-```npm install --save-dev webdriverio```
+```bash
+npm install --save-dev webdriverio
+```
 
 
 You may also need supporting packages depending on your test setup:
 
-bash
-```npm install --save-dev @wdio/cli @wdio/local-runner @wdio/mocha-framework```
+```bash
+npm install --save-dev @wdio/cli @wdio/local-runner @wdio/mocha-framework
+```
 
 
 ### 🛠️ Installation
 Clone the project and install dependencies:
-
-bash
 
 1. git clone repo
 2. cd your-repo-name
@@ -117,15 +116,15 @@ bash
 
 Install watchman (macOS):
 
-bash
-
-```brew install watchman```
+```bash
+brew install watchman
+```
 
 Install global CLIs if you haven’t already:
 
-bash
-
-```npm install -g expo-cli eas-cli appium```
+```bash
+npm install -g expo-cli eas-cli appium
+```
 
 
 
@@ -136,25 +135,27 @@ bash
 ### 🧪 Usage
 Make sure to build the development version of your app first using EAS:
 
-bash
+```bash
+eas build:dev
+```
 
-```eas build:dev```
 Run your app on an iOS simulator:
 
-bash
+```bash
+npx expo start --ios
+```
 
-```npx expo start --ios```
 Or launch Expo dev server for all platforms:
 
-bash
+```bash
+npx expo start
+```
 
-```npx expo start```
-
-
-bash
 Start the Appium server with inspector and CORS enabled:
 
-```appium server --use-plugins=inspector --allow-cors```
+```bash
+appium server --use-plugins=inspector --allow-cors`
+``
 
 ## 🛠️ Material
 - [Building and testing native mobile apps](https://medium.com/tauk-blog/building-and-testing-native-mobile-apps-with-react-native-and-webdriverio-part-1-d51e73fbf573)
