@@ -151,6 +151,6 @@ appium server --use-plugins=inspector --allow-cors`
 
 ## 🛠️ Material
 - [Building and testing native mobile apps](https://medium.com/tauk-blog/building-and-testing-native-mobile-apps-with-react-native-and-webdriverio-part-1-d51e73fbf573)
-- [Configure a development build in cloud](hhttps://docs.expo.dev/tutorial/eas/configure-development-build/)
+- [Configure a development build in cloud](https://docs.expo.dev/tutorial/eas/configure-development-build/)
 - [Create and run a cloud build for iOS Simulator](https://docs.expo.dev/tutorial/eas/ios-development-build-for-simulators/)
 - [How to create and run a cloud build for iOS Simulator | EAS Tutorial](https://www.youtube.com/watch?v=SgL97PFZctg&ab_channel=Expo)
