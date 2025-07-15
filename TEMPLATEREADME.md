@@ -49,6 +49,9 @@ To test on both iOS Simulator and Android Emulator, make sure you have:
 
 
 ### 📦 Expo CLI
+
+**Expo CLI** is a command line tool that helps scaffold React Native projects and provides the easiest way to get started. It also has a companion Expo client app that you can install on iOS and Android devices that allows you to preview your apps wirelessly.
+
 Used for running and building React Native apps via Expo.
 Install with:
 
@@ -57,12 +60,19 @@ bash
 ```npm install -g expo-cli```
 
 ### ⚙️ EAS CLI
-Used to build development versions of the app in the cloud.
+
+**EAS CLI** is a tool provided by Expo to help you build, submit, and manage React Native apps in the cloud. It enables you to create production-ready or development builds for iOS and Android without needing a local native development environment. (Optional)
+
 Install with:
 
 bash
 
 ```npm install -g eas-cli```
+
+### ⚙️ EAS login
+
+eas login connects your local machine to your Expo account, enabling you to use Expo Application Services (EAS) features that require authentication.
+
 Log in to your Expo account:
 
 bash
@@ -82,13 +92,17 @@ bash
 WebdriverIO is a JavaScript testing framework for browser and mobile automation.
 Install it as a development dependency:
 
+
+open-source automation test framework for web and mobile applications. It provides a simple and flexible API for writing end-to-end tests using the WebDriver protocol and supports modern automation tools and services.
+
 bash
 
 ```npm install --save-dev webdriverio```
+
+
 You may also need supporting packages depending on your test setup:
 
 bash
-
 ```npm install --save-dev @wdio/cli @wdio/local-runner @wdio/mocha-framework```
 
 
@@ -97,11 +111,9 @@ Clone the project and install dependencies:
 
 bash
 
-git clone https://github.com/your-username/your-repo-name.git
-
-cd your-repo-name
-
-npm install
+1. git clone repo
+2. cd your-repo-name
+3. npm install
 
 Install watchman (macOS):
 
@@ -115,9 +127,9 @@ bash
 
 ```npm install -g expo-cli eas-cli appium```
 
-**Expo CLI** is a command line tool that helps scaffold React Native projects and provides the easiest way to get started. It also has a companion Expo client app that you can install on iOS and Android devices that allows you to preview your apps wirelessly.
 
-**EAS CLI** is a tool provided by Expo to help you build, submit, and manage React Native apps in the cloud. It enables you to create production-ready or development builds for iOS and Android without needing a local native development environment. (Optional)
+
+
 
 **Appium** is an open-source automation tool for testing mobile applications. It allows you to write tests for native, hybrid, and mobile web apps on iOS, Android, and Windows platforms using the same API.
 
